@@ -1,6 +1,6 @@
-# PagePilot - "Connecting the Dots" Challenge
+# PagePilot - Adobe India Hackathon 2025
 
-## 🏆 Adobe India Hackathon 2025 - Complete Solution
+## 🏆 "Connecting the Dots" Challenge - Complete Solution
 
 PagePilot is a comprehensive document intelligence solution that extracts structured outlines from PDFs and powers them with on-device intelligence for semantic understanding and content linking.
 
@@ -119,7 +119,7 @@ This modular approach ensures clean separation of concerns and easy development/
 
 ---
 
-**Project**: PagePilot  
-**Challenge**: Adobe India Hackathon 2025 - "Connecting the Dots"  
-**Status**: Round 1A Complete, Round 1B & 2 Pending  
+**Project**: PagePilot
+**Challenge**: Adobe India Hackathon 2025 - "Connecting the Dots"
+**Status**: Round 1A Complete, Round 1B & 2 Pending
 **Last Updated**: July 28, 2025
