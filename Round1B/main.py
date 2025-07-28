@@ -117,7 +117,14 @@ Examples:
         
         # Format output
         print("💾 Formatting and saving output...")
+        print(f"🔍 Analysis result type: {type(analysis_result)}")
+        if analysis_result:
+            print(f"🔍 Analysis result keys: {list(analysis_result.keys()) if isinstance(analysis_result, dict) else 'Not a dict'}")
+        else:
+            print("⚠️  Analysis result is None or empty")
+
         formatted_output = json_handler.format_output(analysis_result)
+        print(f"🔍 Formatted output type: {type(formatted_output)}")
         json_handler.save_output(formatted_output, args.output)
         
         # Display summary

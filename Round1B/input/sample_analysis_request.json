@@ -1,0 +1,40 @@
+{
+    "documents": [
+        "sample_document1.pdf",
+        "sample_document2.pdf",
+        "sample_document3.pdf"
+    ],
+    "persona": {
+        "role": "HR professional",
+        "description": "Responsible for employee onboarding, compliance documentation, and form management",
+        "experience_level": "intermediate",
+        "primary_goals": [
+            "Streamline onboarding processes",
+            "Ensure compliance documentation",
+            "Create efficient workflows"
+        ]
+    },
+    "job_to_be_done": {
+        "task": "Create and manage fillable forms for onboarding and compliance.",
+        "context": "Need to digitize paper forms and create interactive PDF forms for new employee onboarding",
+        "success_criteria": [
+            "Forms are easily fillable",
+            "Process is streamlined",
+            "Compliance requirements are met"
+        ],
+        "urgency": "high",
+        "scope": "department-wide"
+    },
+    "analysis_preferences": {
+        "max_sections": 10,
+        "min_confidence": 0.7,
+        "include_page_numbers": true,
+        "extract_content_preview": true,
+        "focus_areas": [
+            "form creation",
+            "fillable fields",
+            "digital signatures",
+            "workflow automation"
+        ]
+    }
+}
