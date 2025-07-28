@@ -9,7 +9,7 @@ PagePilot is a comprehensive document intelligence solution that extracts struct
 ```
 PagePilot/
 ├── Round1A/          # PDF Outline Extraction (COMPLETED ✅)
-├── Round1B/          # On-Device Intelligence & Semantic Linking (TODO)
+├── Round1B/          # Persona-Aware Document Analyst (COMPLETED ✅)
 ├── Round2/           # Advanced Features & Integration (TODO)
 └── README.md         # This file
 ```
@@ -45,12 +45,19 @@ Extract structured outlines from raw PDFs with blazing speed and pinpoint accura
 }
 ```
 
-#### Round 1B: On-Device Intelligence (TODO)
+#### Round 1B: Persona-Aware Document Analyst ✅ COMPLETED
 **Challenge Theme**: Semantic Understanding & Content Linking
 
-**Mission**: Build on-device intelligence that understands document sections and links related ideas together.
+**Mission**: Build AI document analyst that accepts 3-10 PDFs, a persona, and job-to-be-done, then extracts and ranks relevant sections.
 
-**Status**: 🔄 **PENDING** - Awaiting requirements
+**Status**: ✅ **COMPLETED** - Full working solution with NLP intelligence
+
+**Key Features**:
+- Multi-heuristic section ranking with explainable AI
+- Lightweight transformer models (≤1GB) with TF-IDF fallback
+- Persona-aware relevance scoring
+- CPU-only operation with offline capability
+- ≤60 second processing time
 
 #### Round 2: Advanced Features (TODO)
 **Challenge Theme**: Integration & Advanced Capabilities
@@ -78,7 +85,7 @@ docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --networ
 ## 📊 Current Status
 
 - ✅ **Round 1A**: Complete PDF outline extraction solution
-- 🔄 **Round 1B**: Awaiting requirements and implementation
+- ✅ **Round 1B**: Complete persona-aware document analyst
 - 🔄 **Round 2**: Awaiting requirements and implementation
 
 ## 🛠️ Technology Stack
@@ -88,6 +95,12 @@ docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --networ
 - **PyMuPDF (fitz)**: PDF processing and text extraction
 - **Docker**: Containerization for AMD64 architecture
 - **Multi-heuristic algorithms**: Advanced heading detection
+
+### Round 1B
+- **sentence-transformers**: Lightweight NLP models (~80MB)
+- **scikit-learn**: TF-IDF fallback and similarity computation
+- **Multi-factor scoring**: NLP + domain + job + position + level
+- **Explainable AI**: Human-readable ranking explanations
 
 ### Future Rounds
 - TBD based on requirements
